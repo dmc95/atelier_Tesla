@@ -11,26 +11,31 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <nav class="bg-red-500 flex flex-row justify-between items-center">
-      <a href="index.html"
-        ><img class="w-[70px]" alt="logo" src="./assets/img/tesla_logo.jpg"
-      /></a>
+    <nav class="flex flex-row justify-between items-center">
+      <div>
+        <a href="index.html">
 
-      <ul class="bg-blue-500 flex flex-row w-[450px] justify-between">
-        <a href="modelS.html"><li class="list">Model S</li></a>
-        <li class="list">Model 3</li>
-        <li class="list">Model X</li>
-        <li class="list">Model Y</li>
-        <li class="list">Powerwall</li>
-        <li class="list">Recharge</li>
+          <img class="h-[80px]" alt="logo" src="./assets/img/tesla_logo1.png" />
+        </a>
+      </div>
+
+      <ul class="flex flex-row w-[450px] justify-between">
+        <a href="modelS.html"><li class="list" data-tooltip-target="tooltip-Model-S">Model S</li></a>
+        
+        <li class="list" data-tooltip-target="tooltip-Model-3">Model 3</li>
+        <li class="list" data-tooltip-target="tooltip-Model-X">Model X</li>
+        <li class="list" data-tooltip-target="tooltip-Model-Y">Model Y</li>
+        <li class="list" data-tooltip-target="tooltip-Powerwall">Powerwall</li>
+        <li class="list" data-tooltip-target="tooltip-Recharge">Recharge</li>
       </ul>
 
-      <ul class="bg-green-500 flex flex-row w-[320px] justify-evenly">
-        <li class="list">Assistance</li>
-        <li class="list">Shop</li>
-        <li class="list">compte</li>
-        <li class="list">Menu</li>
-        <li class="list focus:ring-4">Menu</li>
+      <ul class="flex flex-row w-[320px] justify-evenly">
+        <li class="list" data-tooltip-target="tooltip-Assistance">
+          Assistance
+        </li>
+        <li class="list" data-tooltip-target="tooltip-Shop">Shop</li>
+        <li class="list" data-tooltip-target="tooltip-Compte">Compte</li>
+        <li class="list" data-tooltip-target="tooltip-menu">Menu</li>
       </ul>
     </nav>
     <section class="bg-black">
