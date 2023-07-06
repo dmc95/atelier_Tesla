@@ -1,11 +1,426 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/flowbite.min.css"
+      rel="stylesheet"
+    />
     <title>Model S</title>
-</head>
-<body>
-    
-</body>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <nav class="bg-red-500 flex flex-row justify-between items-center">
+      <a href="index.html"
+        ><img class="w-[70px]" alt="logo" src="./assets/img/tesla_logo.jpg"
+      /></a>
+
+      <ul class="bg-blue-500 flex flex-row w-[450px] justify-between">
+        <a href="modelS.html"><li class="list">Model S</li></a>
+        <li class="list">Model 3</li>
+        <li class="list">Model X</li>
+        <li class="list">Model Y</li>
+        <li class="list">Powerwall</li>
+        <li class="list">Recharge</li>
+      </ul>
+
+      <ul class="bg-green-500 flex flex-row w-[320px] justify-evenly">
+        <li class="list">Assistance</li>
+        <li class="list">Shop</li>
+        <li class="list">compte</li>
+        <li class="list">Menu</li>
+        <li class="list focus:ring-4">Menu</li>
+      </ul>
+    </nav>
+    <section class="bg-black">
+      <img class="h-[650px] 2xl:w-full 2xl:h-full object-cover" src="assets/img/ModelS_74.jpg" alt="model_s" />
+      <div class="absolute top-[200px] left-1/2 2xl:top-1/3 2xl:left-1/2">
+        <h1 class="2xl:text-5xl font-semibold">Model S</h1>
+        <p class="underline text-slate-600 font-semibold">
+          Réservez votre essai
+        </p>
+      </div>
+      <div
+        class="font-semibold text-center text-white bg-yellow-500 w-[800px] h-[150px] absolute 2xl:top-[1200px] 2xl:left-1/2"
+      >
+        <div class="flex flex-row justify-between">
+          <div class="flex flex-col">
+            <p class="text-2xl">600 km</p>
+            <p>Autonomie</p>
+            <p>(WLPT)</p>
+          </div>
+          <div class="flex flex-col">
+            <p class="text-2xl">2,1s</p>
+            <p>0 à 100km/h*</p>
+          </div>
+          <div class="flex flex-col">
+            <p class="text-2xl">322km/h</p>
+            <p>Vitesse maximale+</p>
+          </div>
+          <div class="flex flex-col">
+            <p class="text-2xl">1020 ch</p>
+            <p>Puissance du véhicule</p>
+          </div>
+        </div>
+        <div class="flex justify-evenly mt-5">
+          <button
+            class="text-black w-[300px] rounded-md h-12 bg-white hover:bg-slate-100 duration-300"
+          >
+            Véhicule disponible
+          </button>
+          <button
+            class="text-white w-[300px] rounded-md h-12 bg-black border-slate-200 border-4 hover:bg-white hover:text-black duration-300"
+          >
+            Commander
+          </button>
+        </div>
+        <p class="mt-16">
+          Les caractéristiques affichées correspondent à la Model S Plaid.
+        </p>
+      </div>
+    </section>
+
+    <section class="bg-black" id="carousel">
+      <p class="flex justify-center py-44 text-white text-3xl font-bold">
+        L'intérieur du futur
+      </p>
+      <img src="assets/img/ModelS_93.jpg" alt="" />
+
+      <div
+        id="default-carousel"
+        class="relative w-2/3 mx-auto h-[800px]"
+        data-carousel="slide"
+      >
+        <!-- Carousel wrapper -->
+        <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+          <!-- Item 1 -->
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <iframe
+              src="https://www.youtube.com/embed/CEhBzX-6FjA&ab_channel=Tesla?autoplay=1&mute=1"
+              frameborder="0"
+            ></iframe>
+          </div>
+          <!-- Item 2 -->
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img
+              src="/docs/images/carousel/carousel-2.svg"
+              class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+              alt="..."
+            />
+          </div>
+          <!-- Item 3 -->
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img
+              src="/docs/images/carousel/carousel-3.svg"
+              class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+              alt="..."
+            />
+          </div>
+          <!-- Item 4 -->
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img
+              src="/docs/images/carousel/carousel-4.svg"
+              class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+              alt="..."
+            />
+          </div>
+          <!-- Item 5 -->
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img
+              src="/docs/images/carousel/carousel-5.svg"
+              class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+              alt="..."
+            />
+          </div>
+        </div>
+        <!-- Slider indicators -->
+        <div
+          class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2"
+        >
+          <button
+            type="button"
+            class="w-3 h-3 rounded-full"
+            aria-current="true"
+            aria-label="Slide 1"
+            data-carousel-slide-to="0"
+          ></button>
+          <button
+            type="button"
+            class="w-3 h-3 rounded-full"
+            aria-current="false"
+            aria-label="Slide 2"
+            data-carousel-slide-to="1"
+          ></button>
+          <button
+            type="button"
+            class="w-3 h-3 rounded-full"
+            aria-current="false"
+            aria-label="Slide 3"
+            data-carousel-slide-to="2"
+          ></button>
+          <button
+            type="button"
+            class="w-3 h-3 rounded-full"
+            aria-current="false"
+            aria-label="Slide 4"
+            data-carousel-slide-to="3"
+          ></button>
+          <button
+            type="button"
+            class="w-3 h-3 rounded-full"
+            aria-current="false"
+            aria-label="Slide 5"
+            data-carousel-slide-to="4"
+          ></button>
+        </div>
+        <!-- Slider controls -->
+        <button
+          type="button"
+          class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+          data-carousel-prev
+        >
+          <span
+            class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+          >
+            <svg
+              class="w-4 h-4 text-white dark:text-gray-800"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 6 10"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M5 1 1 5l4 4"
+              />
+            </svg>
+            <span class="sr-only">Previous</span>
+          </span>
+        </button>
+        <button
+          type="button"
+          class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+          data-carousel-next
+        >
+          <span
+            class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+          >
+            <svg
+              class="w-4 h-4 text-white dark:text-gray-800"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 6 10"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="m1 9 4-4-4-4"
+              />
+            </svg>
+            <span class="sr-only">Next</span>
+          </span>
+        </button>
+      </div>
+    </section>
+    <!-- image flex -->
+    <section class="bg-black text-white">
+      <div class="w-[60%] flex flex-wrap mx-auto">
+        <div class="w-[50%] h-[300px] bg-blue-200"></div>
+        <div class="w-[50%] h-[300px]">
+          <h3>Restez connecté</h3>
+          <p>
+            Connectez vos appareils instantanément grâce au Bluetooth supportant
+            plusieurs connexions simultanées, ou rechargez rapidement vos
+            appareils en tirant parti de la recharge sans fil et USB-C 36 W.
+          </p>
+        </div>
+        <div class="w-[50%] h-[300px]">
+          <h3>Son immersif</h3>
+          <p>
+            Un système audio de 960 watts à 22 haut-parleurs avec Réduction
+            active du bruit de la route offre une écoute immersive et un son de
+            qualité studio.
+          </p>
+        </div>
+        <div class="w-[50%] h-[300px] bg-red-200">
+          <iframe
+            src="https://digitalassets.tesla.com/tesla-contents/video/upload/f_auto,q_auto:best/MS-Interior-Grid-2-Audio-Desktop.mp4?autoplay=1"
+            frameborder="0"
+          ></iframe>
+        </div>
+        <div class="w-[50%] h-[300px] bg-yellow-200"></div>
+        <div class="w-[50%] h-[300px]">
+          <h3>De l'espace pour tous vos objets</h3>
+          <p>
+            Grâce à des coffres avant et arrière ainsi qu'à des sièges
+            rabattables à plat, vous pouvez embarquer vos bagages ou votre vélo
+            sans avoir à retirer une roue.
+          </p>
+        </div>
+      </div>
+    </section>
+    <img src="./assets/img/ModelS_79.jpg" alt="" />
+    <div
+      class="font-bold text-center text-white w-[800px] h-[150px] absolute top-[5900px] left-1/4"
+    >
+      <div class="flex flex-row justify-between">
+        <div class="flex flex-col">
+          <p class="text-3xl">1020 ch</p>
+          <p>Puissance du véhicule</p>
+        </div>
+        <div class="flex flex-col">
+          <p class="text-3xl">9,23 s</p>
+          <p>@250 km/h 1/4 mile</p>
+        </div>
+        <div class="flex flex-col">
+          <p class="text-3xl">2,1s</p>
+          <p>0 à 100km/h*</p>
+        </div>
+      </div>
+    </div>
+    <!-- motopropulseur -->
+    <section class="bg-gray-100" id="motopropulseur">
+      <div>
+        <div>
+          <p>Plaid</p>
+          <h3>Au delà du Ludicrous</h3>
+          <button
+            class="text-white w-[200px] rounded-md h-12 bg-black border-slate-200 border-4 hover:bg-white hover:text-black duration-300"
+          >
+            Véhicule disponible
+          </button>
+          <button
+            class="text-black w-[200px] rounded-md h-12 bg-white hover:bg-slate-100 duration-300"
+          >
+            Véhicule disponible
+          </button>
+        </div>
+        <div>
+          <p>
+            La Model S Plaid offre l'accélération la plus rapide de tous les
+            véhicules en production. Une architecture de batterie revue sur
+            toutes les versions de la Model S permet des lancements répétés sans
+            dégradation des performances.
+          </p>
+        </div>
+      </div>
+      <div class="my-[70px]">
+        <h3>Groupe motopropulseur électrique</h3>
+        <p>
+          Les plateformes de la Model S unissent les technologies du groupe
+          motopropulseur et de la batterie pour des performances, une autonomie
+          et une efficacité incomparables. Nouvelle architecture thermique des
+          modules et du pack batterie assurent une recharge plus rapide et vous
+          offrent plus de puissance et d'endurance quelles que soient les
+          conditions.
+        </p>
+      </div>
+      <img
+        src="./assets/img/Model-S-Plaid-Tri-Motor-Powertrain-Carousel-Desktop.avif"
+        alt=""
+      />
+      <div>
+        <div>
+          <h4>Model S</h4>
+          <p>
+            La transmission intégrale Dual Motor offre une autonomie encore plus
+            étendue que celle des autres véhicules de notre gamme actuelle,
+            accompagnée d'une puissance inouïe et d'une tenue de route optimale.
+          </p>
+          <div>
+            <p>3,2 s</p>
+            <p>0 à 100 km/h</p>
+          </div>
+        </div>
+        <div>
+          <h4>Model S Plaid</h4>
+          <p>
+            Maintient une puissance de plus de 1000 chevaux jusqu'à 322 km/h
+            grâce à la transmission intégrale Tri-Motor, dotée de la fonction de
+            contrôle vectoriel du couple et de trois rotors indépendants à piste
+            carbone.
+          </p>
+          <div>
+            <p>2,1 s</p>
+            <p>600 km/h</p>
+          </div>
+        </div>
+      </div>
+      <img src="./assets/img/ModelS_81.jpg" alt="" />
+      <div class="flex w-[60%] mx-auto bg-black text-white">
+        <div>
+          <p class="mt-5">Extérieur</p>
+          <h3>Conçu pour l'efficience</h3>
+          <div class="flex ">
+
+            <button
+            class="text-white w-[200px] rounded-md h-12 bg-black border-slate-200 border-4 hover:bg-white hover:text-black duration-300"
+            >
+            Véhicule disponible
+          </button>
+          <button
+          class="text-black w-[200px] rounded-md h-12 bg-white hover:bg-slate-100 duration-300"
+          >
+          Véhicule disponible
+        </button>
+      </div>
+        </div>
+        <div>
+          <p class="w-[90%]">
+            Avec un coefficient de traînée aérodynamique de seulement 0.208 Cd,
+            le plus bas au monde, la Model S est conçue pour la vitesse,
+            l'endurance et l'autonomie. Un aérodynamisme amélioré et un châssis
+            plus large assurent des performances disponibles en permanence, afin
+            que vous puissiez enchainer les courbes plus rapidement et avec plus
+            de confiance.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="bg-black text-white">
+      <div class="w-[60%] flex flex-wrap mx-auto">
+        <div class="w-[50%] h-[300px] flex flex-col justify-center">
+          <h3 class="my-5 font-semibold">Des performances continues</h3>
+          <p>
+            Jantes et pneus dédiés à la performance, plus larges à l'arrière,
+            maintiennent le véhicule stable et permettent de passer une
+            puissance maximale sur la route.
+          </p>
+        </div>
+        <div class="w-[50%] h-[300px] bg-blue-200">
+          <img class="h-[300px] w-full object-cover" src="./assets/img/ModelS_78.jpg" alt="">
+        </div>
+        <div class="w-[50%] h-[300px] bg-red-200">
+          <img class="h-[300px] w-full object-cover" src="./assets/img/ModelS_76.jpg" alt="">
+        </div>
+        <div class="w-[50%] h-[300px] flex flex-col justify-center">
+          <h3 class="ml-[90px] my-5 font-semibold">Aérodynamique optimisée</h3>
+          <p class="w-[400px] ml-[90px]">
+            Une attention du détail portée sur l'ensemble des lignes extérieures
+            fait de la Model S le véhicule de production le plus aérodynamique
+            au monde.
+          </p>
+        </div>
+
+        <div class="w-[50%] h-[300px] flex flex-col justify-center">
+          <h3 class="my-5 font-semibold">Style élégant</h3>
+          <p class="">
+            Une ligne emblématique combinées à d'élégantes proportions
+            modernisées.
+          </p>
+        </div>
+        <div class="w-[50%] h-[300px] bg-yellow-200">
+          <img class="h-[300px] w-full object-cover" src="./assets/img/ModelS_77.jpg" alt="">
+        </div>
+      </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/flowbite.min.js"></script>
+  </body>
 </html>
