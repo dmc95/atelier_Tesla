@@ -36,19 +36,20 @@
     <section class="bg-black">
       <div>
         <img
-          class="h-[650px] 2xl:w-full 2xl:h-full object-cover"
+          class="h-[650px] 2xl:w-full 2xl:h-[2000px] object-cover"
           src="assets/img/ModelS_74.jpg"
           alt="model_s"
         />
       </div>
-
-      <div class=" top-[200px] left-1/2 2xl:top-1/3 2xl:left-1/2">
+      
+      <div class="absolute top-[200px] left-1/2 2xl:top-[800px] 2xl:left-[50%]">
         <h1 class="2xl:text-5xl font-semibold">Model S</h1>
         <p class="underline text-slate-600 font-semibold">
           Réservez votre essai
         </p>
+      </div>
         <div
-          class="font-semibold text-center text-white bg-yellow-500 w-[800px] h-[150px] 2xl:top-[10px] 2xl:left-1/2"
+        class="absolute font-semibold text-center text-white w-[800px] h-[150px] 2xl:top-[1800px] 2xl:left-2/4"
         >
           <div class="flex flex-row justify-between">
             <div class="flex flex-col">
@@ -85,7 +86,6 @@
             Les caractéristiques affichées correspondent à la Model S Plaid.
           </p>
         </div>
-      </div>
     </section>
 
     <section class="bg-black" id="carousel">
@@ -239,7 +239,7 @@
     <!-- image flex -->
     <section class="bg-black text-white">
       <div class="w-[60%] flex flex-wrap mx-auto">
-        <div class="w-[50%] h-[300px] bg-blue-200"></div>
+        <div class="w-[50%] h-[300px]"></div>
         <div class="w-[50%] h-[300px]">
           <h3>Restez connecté</h3>
           <p>
@@ -256,13 +256,15 @@
             qualité studio.
           </p>
         </div>
-        <div class="w-[50%] h-[300px] bg-red-200">
-          <iframe
-            src="https://digitalassets.tesla.com/tesla-contents/video/upload/f_auto,q_auto:best/MS-Interior-Grid-2-Audio-Desktop.mp4?autoplay=1"
+        <div class="w-[50%] h-[300px]">
+          <!-- <iframe
+          class="w-full h-full"
+            src="https://digitalassets.tesla.com/tesla-contents/video/upload/f_auto,q_auto:best/MS-Interior-Grid-2-Audio-Desktop.mp4?autoplay=1&mute=1"
             frameborder="0"
-          ></iframe>
+          ></iframe> -->
+          <video class="w-full h-full" src="https://digitalassets.tesla.com/tesla-contents/video/upload/f_auto,q_auto:best/MS-Interior-Grid-2-Audio-Desktop.mp4?autoplay=1&mute=1" controls loop type="video/mp4"></video>
         </div>
-        <div class="w-[50%] h-[300px] bg-yellow-200"></div>
+        <div class="w-[50%] h-[300px] "></div>
         <div class="w-[50%] h-[300px]">
           <h3>De l'espace pour tous vos objets</h3>
           <p>
@@ -330,12 +332,13 @@
         </p>
       </div>
       <img
+      class="mx-auto"
         src="./assets/img/Model-S-Plaid-Tri-Motor-Powertrain-Carousel-Desktop.avif"
         alt=""
       />
-      <div>
-        <div>
-          <h4>Model S</h4>
+      <div class="flex justify-between w-[1200px] mx-auto">
+        <div class="w-[590px]">
+          <h4 class="text-2xl">Model S</h4>
           <p>
             La transmission intégrale Dual Motor offre une autonomie encore plus
             étendue que celle des autres véhicules de notre gamme actuelle,
@@ -346,15 +349,15 @@
             <p>0 à 100 km/h</p>
           </div>
         </div>
-        <div>
-          <h4>Model S Plaid</h4>
+        <div class="w-[590px]">
+          <h4 class="text-2xl">Model S Plaid</h4>
           <p>
             Maintient une puissance de plus de 1000 chevaux jusqu'à 322 km/h
             grâce à la transmission intégrale Tri-Motor, dotée de la fonction de
             contrôle vectoriel du couple et de trois rotors indépendants à piste
             carbone.
           </p>
-          <div>
+          <div class="flex">
             <p>2,1 s</p>
             <p>600 km/h</p>
           </div>
@@ -390,7 +393,7 @@
         </div>
       </div>
     </section>
-    <section class="bg-black text-white">
+    <section class="bg-black text-white py-20">
       <div class="w-[60%] flex flex-wrap mx-auto">
         <div class="w-[50%] h-[300px] flex flex-col justify-center">
           <h3 class="my-5 font-semibold">Des performances continues</h3>
