@@ -2,3 +2,67 @@
     background-color: gray;
    
 }
+
+ 
+
+
+
+.parallax1 {
+    /* The image used */
+    background-image: url('./img/ModelY_88.jpg');
+
+    /* Set a specific height */
+    min-height: 500px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav {
+    Position: fixed;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+    z-index: 55;
+    
+    overflow: hidden;
+}
+
+footer {
+    Position: fixed;
+    width: 100%;
+    left: 0px;
+    bottom : 0px;
+    
+
+    overflow: hidden;
+}
+
+.modelY{
+    background-image: url('./img/ModelY_88.jpg');
+    
+        /* Set a specific height */
+        min-height: 110vh;
+        background-position: center;
+        background-size: cover;
+}
+
+.modelX {
+    background-image: url('./img/ModelX_06.jpg');
+
+    /* Set a specific height */
+    min-height: 110vh;
+    background-position: center;
+    background-size: cover;
+}
+.modelS {
+    background-image: url('./img/ModelS_74.jpg');
+
+    /* Set a specific height */
+    min-height: 110vh;
+    background-position: center;
+    background-size: cover;
+}

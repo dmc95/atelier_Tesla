@@ -6,38 +6,199 @@
     <link rel="stylesheet" href="assets/style.css">
     <title>Tesla</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/flowbite.min.css" rel="stylesheet" />
+
+
+
+
+    
+
+
 </head>
 
 
-<body>
 
-    <nav class="bg-red-500 flex flex-row justify-between items-center">
-        <img class="w-[70px]" alt="logo" src="./assets/img/tesla_logo.jpg"/>
-        <ul class="bg-blue-500 flex flex-row w-[450px] justify-between " >
+
+<body class=" h-screen v-screen body" >
+
+    <nav class="flex flex-row justify-between items-center">
+        <div>       
+            <img class="h-[50px]" alt="logo" src="./assets/img/tesla_logo1.png"/>
+        </div>
+        
+        <ul class="flex flex-row w-[450px] justify-between " >
             
-            <li class="list">Model S</li>
-            <li class="list">Model 3</li>
-            <li class="list">Model X</li>
-            <li class="list">Model Y</li>
-            <li class="list"> Powerwall</li>
-            <li class="list">Recharge</li>
+            <li class="list" data-tooltip-target="tooltip-Model-S">Model S</li>
+            <li class="list" data-tooltip-target="tooltip-Model-3">Model 3</li>
+            <li class="list" data-tooltip-target="tooltip-Model-X">Model X</li>
+            <li class="list" data-tooltip-target="tooltip-Model-Y">Model Y</li>
+            <li class="list" data-tooltip-target="tooltip-Powerwall"> Powerwall</li>
+            <li class="list" data-tooltip-target="tooltip-Recharge">Recharge</li>
         </ul>
     
-            <ul class="bg-green-500 flex flex-row w-[320px] justify-evenly">
+            <ul class=" flex flex-row w-[320px] justify-evenly">
 
-            <li class="list"> Assistance</li>
-            <li class="list" >Shop</li>
-            <li class="list" >compte</li>
-            <li class="list " >Menu</li>
-             <li class="list focus:ring-4">Menu</li>
+            <li class="list" data-tooltip-target="tooltip-Assistance"> Assistance</li>
+            <li class="list" data-tooltip-target="tooltip-Shop">Shop</li>
+            <li class="list" data-tooltip-target="tooltip-Compte">Compte</li>
+            <li class="list" data-tooltip-target="tooltip-menu">Menu</li>
 
         </ul>
+
+
+
+
 
     </nav>
 
 
-    <main>
-       
-    </main>
+
+    <!--! debut Model S -->
+    <div class="modelS">
+        <h1 class="text-4xl py-[70px]  text-center "> Model S</h1>
+
+    </div>
+
+    <!--! debut Model X -->
+    <div class="modelX">
+        <h1 class="text-4xl py-[70px]  text-center "> Model X</h1>
+    
+    </div>
+
+
+    <!--! debut Model Y -->
+    <div class="modelY">
+        <h1 class="text-4xl  py-[70px] text-center "> Model Y</h1>
+    
+    </div>
+
+
+
+ 
+
+    <footer class=" w-full" >
+        <div class="text-center  flex-col">
+            <div>
+
+
+            
+            <button type="button" class="text-white
+                        
+                        w-[150px]
+                        bg-gray-800 
+                        hover:bg-gray-900
+                        focus:outline-none
+                        focus:ring-4
+                        focus:ring-gray-300
+                        font-medium rounded-lg                        
+                        px-500 py-2.5 
+                        dark:bg-gray-800 
+                        dark:hover:bg-gray-700 
+                        dark:focus:ring-gray-700 
+                        dark:border-gray-700"
+                        data-tooltip-target="tooltip-Custom-order"
+                        >Custom Order</button>
+        
+            <button type="button" class="text-gray-900 
+                            w-[150px]
+                            bg-white border 
+                            border-gray-300 
+                            focus:outline-none 
+                            hover:bg-gray-100 
+                            focus:ring-4 
+                            focus:ring-gray-200 
+                            font-medium rounded-lg 
+                            px-5 py-2.5 
+                            dark:bg-gray-800 
+                            dark:text-white 
+                            dark:border-gray-600 
+                            dark:hover:bg-gray-700 
+                            dark:hover:border-gray-600 
+                            dark:focus:ring-gray-700"
+                            data-tooltip-target="tooltip-learn-more"
+                            >Learn More</button>
+        </div>
+
+        <div>
+            <p class="text-xs text-white  italic my-[10px]">Euro NCAP 5-Star Safety Rating</p>
+        </div>
+        </div>
+    </footer>
+   
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/flowbite.min.js"></script>
 </body>
 </html>
+
+
+<!-- tooltip-->
+<div id="tooltip-menu" role="tooltip"
+    class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+    Menu
+    <div class="tooltip-arrow" data-popper-arrow></div>
+</div>
+
+<div id="tooltip-Compte" role="tooltip"
+    class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+    Compte
+    <div class="tooltip-arrow" data-popper-arrow></div>
+</div>
+
+<div id="tooltip-Shop" role="tooltip"
+    class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+    Shop
+    <div class="tooltip-arrow" data-popper-arrow></div>
+</div>
+
+<div id="tooltip-Assistance" role="tooltip"
+    class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+    Assitance
+    <div class="tooltip-arrow" data-popper-arrow></div>
+</div>
+
+<div id="tooltip-Model-S" role="tooltip"
+    class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+    Model S
+    <div class="tooltip-arrow" data-popper-arrow></div>
+</div>
+<div id="tooltip-Model-3" role="tooltip"
+    class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+    Model 3
+    <div class="tooltip-arrow" data-popper-arrow></div>
+</div>
+<div id="tooltip-Model-X" role="tooltip"
+    class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+    Model X
+    <div class="tooltip-arrow" data-popper-arrow></div>
+</div>
+<div id="tooltip-Model-Y" role="tooltip"
+    class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+    Model Y
+    <div class="tooltip-arrow" data-popper-arrow></div>
+</div>
+<div id="tooltip-Powerwall" role="tooltip"
+    class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+    Powerwall
+    <div class="tooltip-arrow" data-popper-arrow></div>
+</div>
+<div id="tooltip-Recharge" role="tooltip"
+    class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+    Recharge
+    <div class="tooltip-arrow" data-popper-arrow></div>
+</div>
+
+<div id="tooltip-Custom-order" role="tooltip"
+    class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+    Custom order
+    <div class="tooltip-arrow" data-popper-arrow></div>
+</div>
+
+<div id="tooltip-learn-more" role="tooltip"
+    class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+    learn more
+    <div class="tooltip-arrow" data-popper-arrow></div>
+</div>
+
+
+
+
